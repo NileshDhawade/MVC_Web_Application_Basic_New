@@ -1,0 +1,30 @@
+﻿<h1>This is my author list page</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">authorId</th>
+      <th scope="col">authorName</th>
+      <th scope="col">authorBookName</th>
+    </tr>
+  </thead>
+  <tbody>
+   @foreach (MVC_Basics_WebApplication_Practice.Models.Author item in ViewBag.author)
+		{
+			
+			<tr>
+				<td>
+					@item.authorId
+				</td>
+				<td>
+					@item.authorName
+				</td>
+				<td>
+					@item.authorBookName
+				</td>
+			</tr>
+
+		}
+    
+  </tbody>
+</table>
